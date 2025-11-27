@@ -7,12 +7,12 @@ export default defineConfig({
   plugins: [react()],
   server: {
     host: process.env.HOST || "0.0.0.0",
-    port: Number(process.env.REACT_APP_PORT || 3000),
+    port: Number(process.env.PORT) || 3000,
     strictPort: false
   },
   preview: {
     host: process.env.HOST || "0.0.0.0",
-    port: Number(process.env.REACT_APP_PORT || 3000),
+    port: Number(process.env.PORT) || 3000,
     strictPort: false
   }
 });
