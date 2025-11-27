@@ -1,0 +1,13 @@
+@import "./styles/theme.css";
+
+/* App-specific structural styles (kept minimal here) */
+.app-root {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+  padding: 16px;
+}
