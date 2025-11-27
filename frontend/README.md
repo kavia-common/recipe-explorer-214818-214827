@@ -8,7 +8,7 @@ Monochrome (Black & White) theme applied across the app using central CSS variab
 
 ## Getting Started
 - npm install
-- npm run dev
+- npm start  (Vite dev server; respects HOST and REACT_APP_PORT, defaults to 0.0.0.0:3000)
 
 Environment variables (respect if present):
 - REACT_APP_API_BASE, REACT_APP_BACKEND_URL, REACT_APP_FRONTEND_URL, REACT_APP_WS_URL,
@@ -17,7 +17,7 @@ Environment variables (respect if present):
 - REACT_APP_HEALTHCHECK_PATH, REACT_APP_FEATURE_FLAGS, REACT_APP_EXPERIMENTS_ENABLED
 
 ## Structure
-- public/index.html: App host
+- index.html: Vite host (root)
 - src/styles/theme.css: Central theme tokens (grayscale)
 - src/index.css: Imports theme and base layout utilities
 - src/index.js: React app entry rendering sample UI bound to theme tokens

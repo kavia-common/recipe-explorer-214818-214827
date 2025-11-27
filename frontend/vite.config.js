@@ -6,11 +6,13 @@ export default defineConfig({
   /** Vite configuration for the Recipe Explorer frontend (React, Monochrome theme). */
   plugins: [react()],
   server: {
-    port: Number(process.env.REACT_APP_PORT || 5173),
+    host: process.env.HOST || "0.0.0.0",
+    port: Number(process.env.REACT_APP_PORT || 3000),
     strictPort: false
   },
   preview: {
-    port: Number(process.env.REACT_APP_PORT || 4173),
+    host: process.env.HOST || "0.0.0.0",
+    port: Number(process.env.REACT_APP_PORT || 3000),
     strictPort: false
   }
 });
